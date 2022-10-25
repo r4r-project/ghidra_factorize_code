@@ -28,15 +28,15 @@ import ghidra.program.model.address.AddressSet;
 import ghidra.program.model.listing.Instruction;
 import ghidra.util.task.TaskMonitor;
 
-public class FactorizeInlineFunctions extends GhidraScript {
+public class FactorizeCode extends GhidraScript {
 	
 	private String funcName;
 	
 	private class MyInstructionSearchDialog extends InstructionSearchDialog {
 
-		private FactorizeInlineFunctions script;
+		private FactorizeCode script;
 		
-		public MyInstructionSearchDialog(FactorizeInlineFunctions script, InstructionSearchPlugin plugin, String title, TaskMonitor taskMonitor) {
+		public MyInstructionSearchDialog(FactorizeCode script, InstructionSearchPlugin plugin, String title, TaskMonitor taskMonitor) {
 			super(plugin, title, taskMonitor);
 			this.script = script;
 		}
