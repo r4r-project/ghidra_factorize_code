@@ -35,7 +35,6 @@ public class FactorizeCodeMainProvider extends DialogComponentProvider {
 	private JPanel[] panels;
 	private InstructionSearchProvider instructionSearchProvider;
 	private FunctionDeclarationProvider functionDeclarationProvider;
-	//private JPanel functionDeclarationProvider;
 	
 	/**
 	 * @param tool  The plugin tools
@@ -63,11 +62,9 @@ public class FactorizeCodeMainProvider extends DialogComponentProvider {
 		// pattern and function declaration
 		this.instructionSearchProvider   = new InstructionSearchProvider(this);
 		this.functionDeclarationProvider = new FunctionDeclarationProvider(this);
-		//this.functionDeclarationProvider = new JPanel();
 		this.panels = new JPanel[] {
 			(JPanel)this.instructionSearchProvider.getComponent(),
 			(JPanel)this.functionDeclarationProvider.getComponent()
-			//this.functionDeclarationProvider
 		};
 		
 		// Set viewable panels
